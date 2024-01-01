@@ -1,4 +1,44 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  --main-font: "IBM Plex Mono", sans-serif;
+
+  --max-width: 1024px;
+  --main-text-size: 18px;
+
+  --dark: #000028;
+  --neon-pink: #FF0070;
+  --pale-pink: #F1B2CE;
+  --neon-purple: #DB00FF;
+
+  --gray: #353430;
+  --pastele-pink: #FFC2E6;
+  --pink: #FF8DCB;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-theme-color: var(--dark);
+    --second-theme-color: var(--neon-pink);
+
+    --slogan-color: var(--neon-purple);
+    --slogan-shadow-color: var(--neon-pink);
+
+    --main-bg-color: var(--main-theme-color);
+    --text-bg-color: var(--second-theme-color);
+    --main-elements-color: var(--second-theme-color);
+    --text-color: var(--pale-pink);
+
+    --decor-color: var(--main-elements-color);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-theme-color: var(--gray);
+    --second-theme-color: var(--pink);
+    --header-color: var(--pastele-pink);
+    --heading-text-color: var(--gray);
+    --heading-text-decorated-color: var(--heading-text);
+    --main-text-color: var(--gray);
+    --text-bg-color: var(--pink);
+  }
+}
