@@ -1,23 +1,30 @@
 :root {
   --main-font: "IBM Plex Mono", sans-serif;
+  --screen-padding: 20px;
 
   --max-width: 1024px;
   --main-text-size: 18px;
 
+  --main-bg-image-dark: url("../images/cover-image-dark.png");
+  --main-bg-image-light: url("../images/cover-image-light.png");
+
   --dark: #000028;
-  --neon-pink: #FF0070;
-  --pale-pink: #F1B2CE;
-  --neon-purple: #DB00FF;
+  --neon-pink: #ff0070;
+  --pale-pink: #f1b2ce;
+  --neon-purple: #db00ff;
 
   --gray: #353430;
-  --pastele-pink: #FFC2E6;
-  --pink: #FF8DCB;
+  --pastele-pink: #ffc2e6;
+  --pink: #ff8dcb;
+  --beige: #fff1f7;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --main-theme-color: var(--dark);
     --second-theme-color: var(--neon-pink);
+
+    --main-bg-image: var(--main-bg-image-dark);
 
     --slogan-color: var(--neon-purple);
     --slogan-shadow-color: var(--neon-pink);
@@ -35,10 +42,25 @@
   :root {
     --main-theme-color: var(--gray);
     --second-theme-color: var(--pink);
-    --header-color: var(--pastele-pink);
-    --heading-text-color: var(--gray);
-    --heading-text-decorated-color: var(--heading-text);
-    --main-text-color: var(--gray);
+
+    --main-bg-image: var(--main-bg-image-light);
+
+    --slogan-color: var(--pastele-pink);
+    --slogan-shadow-color: var(--neon-pink);
+
+    --main-bg-color: var(--beige);
     --text-bg-color: var(--pink);
+    --main-elements-color: var(--main-theme-color);
+    --text-color: var(--main-theme-color);
+  }
+
+  .header .header__decor {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: light) and (width < 1024px) {
+  :root {
+    --slogan-shadow-color: var(--pink);
   }
 }

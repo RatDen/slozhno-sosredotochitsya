@@ -18,7 +18,7 @@
   </head>
   <body class="page">
     <header class="header decorated-zone">
-      <p class="header__decor">Rec</p>
+      <p class="header__decor" aria-hidden="true">Rec</p>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -63,8 +63,10 @@
           </article>
         </div>
       </section>
-      <section class="content-item content-item_horizontal_blocks">
-        <h2 class="section-header">Что снижает концентрацию внимания?</h2>
+      <section class="content-item content-item_horizontal_blocks"> 
+        <div class="content-item__section-header-wrap">
+          <h2 class="section-header">Что снижает концентрацию внимания?</h2>
+        </div>
         <div class="container-horizontal">
           <article class="card">
             <h3 class="card-header text-decoration">Многозадачность</h3>

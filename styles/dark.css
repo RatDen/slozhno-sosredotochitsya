@@ -9,4 +9,19 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+
+  --main-theme-color: var(--dark);
+  --second-theme-color: var(--neon-pink);
+
+  --main-bg-image: var(--main-bg-image-dark);
+
+  --slogan-color: var(--neon-purple);
+  --slogan-shadow-color: var(--neon-pink);
+
+  --main-bg-color: var(--main-theme-color);
+  --text-bg-color: var(--second-theme-color);
+  --main-elements-color: var(--second-theme-color);
+  --text-color: var(--pale-pink);
+
+  --decor-color: var(--main-elements-color);
 }
