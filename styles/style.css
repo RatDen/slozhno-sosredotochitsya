@@ -196,6 +196,10 @@
   gap: 20px;
 }
 
+.container-vertical .card__header {
+  margin: 0;
+}
+
 .container-horizontal {
   display: grid;
   gap: 20px;
@@ -228,7 +232,8 @@
   gap: 20px;
 }
 
-.card__header {
+.card__header,
+.card__advice-header {
   margin-bottom: 10px;
 }
 
@@ -317,7 +322,7 @@
 }
 
 @media (768px <= width < 1024px) {
-  h1 {
+  .slogan {
     font-size: 120px;
   }
 
@@ -343,7 +348,7 @@
     --screen-padding: 10px;
   }
 
-  h1 {
+  .slogan {
     font-size: 116px;
   }
 
