@@ -10,26 +10,47 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 
-  --main-theme-color: var(--gray);
-  --second-theme-color: var(--pink);
+  --main-bg-image: url("../images/cover-image-light.png");
 
-  --main-bg-image: var(--main-bg-image-light);
+  --main-theme-color: #353430;
+  --accent-color: #ff8dcb;
 
-  --slogan-color: var(--pastele-pink);
-  --slogan-shadow-color: var(--neon-pink);
+  --slogan-color: #ffc2e6;
+  --slogan-shadow-color: #ff0070;
 
-  --main-bg-color: var(--beige);
-  --text-bg-color: var(--pink);
+  --main-bg-color: #fff1f7;
+  --text-bg-color: #ff8dcb;
   --main-elements-color: var(--main-theme-color);
   --text-color: var(--main-theme-color);
+}
 
-  .header__decor {
+.page.theme_light .header__decor {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-bg-image: url("../images/cover-image-light.png");
+
+    --main-theme-color: #353430;
+    --accent-color: #ff8dcb;
+
+    --slogan-color: #ffc2e6;
+    --slogan-shadow-color: #ff0070;
+
+    --main-bg-color: #fff1f7;
+    --text-bg-color: #ff8dcb;
+    --main-elements-color: var(--main-theme-color);
+    --text-color: var(--main-theme-color);
+  }
+
+  .header .header__decor {
     display: none;
   }
 }
 
-@media (width < 1024px) {
-  .page.theme_light {
-    --slogan-shadow-color: var(--pink);
+@media (prefers-color-scheme: light) and (width < 1024px) {
+  :root {
+    --slogan-shadow-color: #ff8dcb;
   }
 }

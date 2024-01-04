@@ -5,8 +5,20 @@
   --max-width: 1024px;
   --main-text-size: 18px;
 
-  --main-bg-image-dark: url("../images/cover-image-dark.png");
-  --main-bg-image-light: url("../images/cover-image-light.png");
+  --main-bg-image: url("../images/cover-image-dark.png");
+
+  --main-theme-color: #000028;
+  --accent-color: #ff0070;
+
+  --slogan-color: #db00ff;
+  --slogan-shadow-color: #ff0070;
+
+  --main-bg-color: var(--main-theme-color);
+  --text-bg-color: var(--accent-color);
+  --main-elements-color: var(--accent-color);
+  --text-color: #f1b2ce;
+
+  --decor-color: var(--main-elements-color);
 
   --dark: #000028;
   --neon-pink: #ff0070;
@@ -17,50 +29,4 @@
   --pastele-pink: #ffc2e6;
   --pink: #ff8dcb;
   --beige: #fff1f7;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --main-theme-color: var(--dark);
-    --second-theme-color: var(--neon-pink);
-
-    --main-bg-image: var(--main-bg-image-dark);
-
-    --slogan-color: var(--neon-purple);
-    --slogan-shadow-color: var(--neon-pink);
-
-    --main-bg-color: var(--main-theme-color);
-    --text-bg-color: var(--second-theme-color);
-    --main-elements-color: var(--second-theme-color);
-    --text-color: var(--pale-pink);
-
-    --decor-color: var(--main-elements-color);
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --main-theme-color: var(--gray);
-    --second-theme-color: var(--pink);
-
-    --main-bg-image: var(--main-bg-image-light);
-
-    --slogan-color: var(--pastele-pink);
-    --slogan-shadow-color: var(--neon-pink);
-
-    --main-bg-color: var(--beige);
-    --text-bg-color: var(--pink);
-    --main-elements-color: var(--main-theme-color);
-    --text-color: var(--main-theme-color);
-  }
-
-  .header .header__decor {
-    display: none;
-  }
-}
-
-@media (prefers-color-scheme: light) and (width < 1024px) {
-  :root {
-    --slogan-shadow-color: var(--pink);
-  }
 }
